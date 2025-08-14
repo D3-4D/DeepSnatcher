@@ -1,6 +1,6 @@
 # DeepSnatcher
 
-DeepSnatcher is a reverse-engineered API key requester designed to interact with the free DeepAI models. It replicates the TryIt API key generation mechanism to facilitate requests to DeepAI's endpoints, enabling enhanced control and experimentation with their AI services.
+DeepSnatcher is a reverse-engineered API requester designed to interact with the free DeepAI models. It replicates the TryIt API key generation mechanism to facilitate requests to DeepAI's endpoints, enabling enhanced control and experimentation with their AI services.
 
 Credit is due to @5eero for developing a similar module earlier. DeepSnatcher was built independently without any resource of his project. This project is developed and maintained by @D3-4D.
 
