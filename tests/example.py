@@ -1,6 +1,14 @@
 from deepsnatcher.api import API
-App = API(Stream=(input("Stream response? ( y / n )\n.").lower()=="y"), Model=input("AI Model(online,math,standard): ") or "standard")
-print("Streaming: " + ("True" if App.Stream else "False"))
+App = API(
+    History = [
+        {
+            "role": "system", 
+            "content": "Be informative."
+        }
+    ], 
+    Stream = (input("Stream response? ( y / n )\n.").lower()=="y"),
+    Model= "standard" #input("AI Model(online,math,standard): ") or "standard"
+)
 
 while True:
     try:
@@ -10,9 +18,8 @@ while True:
                 print(f"[DeepAI]: ",end="")
                 for Piece in Request[1][1]:
                     if Piece:
-                        if Piece[-1] == "\\":
-                            continue
                         print(Piece, end="")
+                print()
             else:
                 print(f"[DeepAI]: {Request[1][1]}")
         else:
